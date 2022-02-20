@@ -1,0 +1,52 @@
+{% load static %}
+<html lang="en">
+    <head>
+        <title>
+            with.crepantherx.dev
+        </title>
+        <link rel="stylesheet" href="{% static 'question/style.css' %}">
+        <style>
+            main {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .data-tilt{
+                margin: 25px;
+            }
+            section {
+                text-align: center;
+                width: 20vw;
+                padding: 15px;
+                
+            }
+            img {
+                object-fit: cover;
+                margin: 15px;
+            }
+            main > div {
+                border: 1px solid rgb(0, 187, 0);
+            }
+            main > section > article {
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+            button {
+                margin-right: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        {% block content %}{% endblock %}
+       <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+       <script src="tilt.js"></script>
+       <script type="text/javascript">
+            $(document).ready(function(){
+
+    $('.data-tilt').tilt({
+        scale: 1.1
+})
+            })
+    </script>
+    </body>
+</html>
