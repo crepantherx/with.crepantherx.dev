@@ -1,9 +1,9 @@
 {% extends "question/base.html" %}
 {% block content %}
-
+{% load static %}
 <div id='home'>
     <a href="https://with.crepantherx.dev/">
-        <img src="../icon/home.png" alt=""> 
+        <img src="{% static 'question/img/home.png' %}" alt=""> 
     </a>
     <label>Challenge yourself to be at next level</label>
     <!-- <button class="btn"><a href="#"></a>@Rs. 49</a></button> -->
@@ -24,7 +24,7 @@
         <a href="SQL_question.html">
         <section>
             <label for="" style="color:white">SQL</label>
-            <img src="../icon/image.png" alt="" width="200" height="200" style="opacity: 0.8;">
+            <img src="{% static 'question/img/image.png' %}" alt="" width="200" height="200" style="opacity: 0.8;">
             <button class="btn"><a href="SQL_question.html">Open</a>
             <!-- </button><button><a href="https://algo.crepantherx.dev/">Website</a></button> -->
         </section>
